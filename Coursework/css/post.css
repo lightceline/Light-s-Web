@@ -1,0 +1,671 @@
+/* Edit Post Form Styles */
+.edit-post-form {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.edit-post-form h2 {
+    color: #bb86fc;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #333;
+}
+
+.edit-post-form textarea {
+    width: 100%;
+    min-height: 200px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    background: #121212;
+    border: 1px solid #333;
+    border-radius: 4px;
+    color: #e0e0e0;
+    font-size: 1rem;
+    line-height: 1.6;
+    resize: vertical;
+}
+
+.edit-post-form textarea:focus {
+    border-color: #bb86fc;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(187, 134, 252, 0.25);
+}
+
+.edit-post-form .button-group {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.edit-post-form .submit-btn {
+    margin: 0;
+}/* Post Detail & Form Shared Styles */
+.post-detail, .post-form {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.6s ease-out;
+}
+
+/* Post Content Styles */
+.post-header {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #333;
+}
+
+.post-author, .post-module {
+    color: #e0e0e0;
+    margin: 0.5rem 0;
+}
+
+.post-content {
+    color: #e0e0e0;
+    line-height: 1.8;
+    margin: 2rem 0;
+    font-size: 1.1rem;
+}
+
+.post-date {
+    color: #bb86fc;
+    font-size: 0.9rem;
+    margin: 1rem 0;
+}
+
+/* Image Styles */
+.post-image {
+    margin: 2rem 0;
+}
+
+.post-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.post-image img:hover {
+    transform: scale(1.02);
+}
+
+/* Comments Section */
+.comment-section {
+    margin-top: 2rem;
+}
+
+.comment-section h3 {
+    color: #bb86fc;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.comment-box {
+    background-color: #2d2d2d;
+    border-radius: 6px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-left: 3px solid #bb86fc;
+    animation: fadeIn 0.4s ease-out;
+}
+
+.comment-box strong {
+    color: #bb86fc;
+}
+
+.comment-time {
+    color: #888;
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+}
+
+/* Form Elements */
+.form-group {
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.form-group label {
+    display: block;
+    color: #e0e0e0;
+    margin-bottom: 0.8rem;
+    font-size: 0.95rem;
+}
+
+/* Textarea Styles */
+.form-group textarea,
+.comment-input-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    resize: vertical;
+    min-height: 40px;
+    font-size: 1rem;
+    line-height: 1.5;
+    transition: border-color 0.3s ease;
+}
+
+.form-group textarea:focus,
+.comment-input-group textarea:focus {
+    border-color: #bb86fc;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(187, 134, 252, 0.25);
+}
+
+/* File Input */
+.form-group input[type="file"] {
+    padding: 10px;
+    background: #121212;
+    border: 1px dashed #333;
+    border-radius: 4px;
+    width: 100%;
+    color: #e0e0e0;
+    cursor: pointer;
+}
+
+/* Select Input */
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background-color: #121212;
+    color: #e0e0e0;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23bb86fc' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 1em;
+}
+
+/* Button Styles */
+.submit-btn,
+.comment-submit {
+    background-color: #bb86fc;
+    color: #121212;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.submit-btn {
+    display: block;
+    margin-left: auto;
+    margin-top: 2rem;
+    padding: 12px 24px;
+}
+
+.submit-btn:hover,
+.comment-submit:hover {
+    background-color: #d7b8ff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(187, 134, 252, 0.4);
+}
+
+/* Comment Form Specific */
+.comment-input-group {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    background-color: transparent;
+}
+
+.posting-as {
+    color: #bb86fc;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    padding: 0.5rem;
+    background: rgba(187, 134, 252, 0.1);
+    border-radius: 4px;
+    display: inline-block;
+}
+
+/* Module View Styles */
+.module-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.module-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.module-card {
+    background: #1e1e1e;
+    border-radius: 8px;
+    padding: 1.5rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: 1px solid #333;
+}
+
+.module-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    border-color: #bb86fc;
+}
+
+.module-card h3 {
+    color: #bb86fc;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.module-card p {
+    color: #e0e0e0;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.post-count {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background: rgba(187, 134, 252, 0.1);
+    color: #bb86fc;
+    border-radius: 12px;
+    font-size: 0.85rem;
+}
+
+
+/* Control Panel Styles */
+.control-panel {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+}
+
+.control-panel h2 {
+    color: #bb86fc;
+    margin-bottom: 2rem;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.stat-card {
+    background: #1e1e1e;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    border: 1px solid #333;
+}
+
+.stat-card h3 {
+    color: #bb86fc;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.stat-number {
+    font-size: 2rem;
+    color: #e0e0e0;
+    font-weight: bold;
+}
+
+.admin-actions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.action-card {
+    background: #1e1e1e;
+    border-radius: 8px;
+    padding: 1.5rem;
+    border: 1px solid #333;
+}
+
+.action-card h3 {
+    color: #bb86fc;
+    margin-bottom: 1rem;
+}
+
+.action-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.admin-btn {
+    display: inline-block;
+    padding: 0.8rem 1.2rem;
+    background: #bb86fc;
+    color: #121212;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    font-weight: 500;
+}
+
+.admin-btn:hover {
+    background: #d7b8ff;
+    transform: translateY(-2px);
+}
+
+/* Admin Panel Styles */
+.admin-panel {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+}
+
+.admin-panel h2 {
+    color: #bb86fc;
+    margin-bottom: 2rem;
+}
+
+.data-table {
+    background: #1e1e1e;
+    border-radius: 8px;
+    padding: 1rem;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #333;
+}
+
+th {
+    color: #bb86fc;
+    font-weight: 500;
+}
+
+.actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.save-btn, .delete-btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.save-btn {
+    background: #bb86fc;
+    color: #121212;
+}
+
+.delete-btn {
+    background: #cf6679;
+    color: #fff;
+}
+
+.save-btn:hover, .delete-btn:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+.edit-input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background: #1e1e1e;
+    color: #e0e0e0;
+    transition: border-color 0.2s ease;
+}
+
+.edit-input:focus {
+    border-color: #bb86fc;
+    outline: none;
+}
+
+.edit-form {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.module-management {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #1e1e1e;
+    border-radius: 8px;
+}
+
+.module-management h2 {
+    color: #bb86fc;
+    margin-bottom: 2rem;
+}
+
+.add-module-form {
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #333;
+}
+
+.module-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    border: 1px solid #333;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.edit-form {
+    flex: 1;
+    display: flex;
+    gap: 1rem;
+}
+
+.add-btn {
+    background: #bb86fc;
+    color: #121212;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    transition: all 0.2s ease;
+
+}
+
+.module-item input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    background: #121212;
+    border: 1px solid #333;
+    border-radius: 4px;
+    color: #e0e0e0;
+}
+
+.edit-btn, .delete-btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.edit-btn {
+    background: #bb86fc;
+    color: #121212;
+}
+
+.delete-btn {
+    background: #cf6679;
+    color: #fff;
+}
+
+.edit-btn:hover, .delete-btn:hover {
+    transform: translateY(-1px);
+    opacity: 0.9;
+}
+
+/* Module container styles */
+.module-container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+    flex: 1;
+}
+
+.module-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.module-container h2 {
+    color: #bb86fc;
+    margin-bottom: 1.5rem;
+}
+
+/* Contact Form Styles */
+.contact-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #1e1e1e;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.contact-container h2 {
+    color: #bb86fc;
+    margin-bottom: 2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #333;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    color: #e0e0e0;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    background: #121212;
+    border: 1px solid #333;
+    border-radius: 4px;
+    color: #e0e0e0;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #bb86fc;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(187, 134, 252, 0.25);
+}
+
+.form-group textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.success-message {
+    padding: 1rem;
+    background: rgba(76, 175, 80, 0.1);
+    border: 1px solid #4CAF50;
+    color: #4CAF50;
+    border-radius: 4px;
+    margin-bottom: 1.5rem;
+}
+
+.error-message {
+    padding: 1rem;
+    background: rgba(244, 67, 54, 0.1);
+    border: 1px solid #F44336;
+    color: #F44336;
+    border-radius: 4px;
+    margin-bottom: 1.5rem;
+}
+
+/* Submit Button */
+.contact-form .submit-btn {
+    align-self: flex-end;
+    padding: 0.75rem 1.5rem;
+    background: #bb86fc;
+    color: #121212;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.contact-form .submit-btn:hover {
+    background: #d7b8ff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(187, 134, 252, 0.4);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .contact-container {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+    
+    .contact-form .submit-btn {
+        width: 100%;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
